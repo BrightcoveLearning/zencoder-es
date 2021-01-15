@@ -1,0 +1,2646 @@
+﻿<!doctype html>
+<html lang="es-es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Configuración de codificación de un vistazo.">
+
+  <title>Referencia rápida de configuración de codificación</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-ultra.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-ultra.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-super.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-super.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-black.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-black.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-bold.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-bold.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-medium.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-medium.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="/assets/css/local.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
+  <script src="/assets/js/sajari-head.js"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/Zencoder_Logo.svg" alt="logotipo del producto" style="max-height: 100px;max-width: 232px;"/></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">Seleccionar idioma</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script>
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+    <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
+      <option value="">Otros documentos de Brightcove</option>
+      
+        
+          <option value="https://support.brightcove.com">Documentación Inicio</option>
+        
+      
+        
+          <option value="https://audience.support.brightcove.com">Audiencia de Brightcove</option>
+        
+      
+        
+          <option value="https://beacon.support.brightcove.com">Baliza Brightcove</option>
+        
+      
+        
+          <option value="https://campaign.support.brightcove.com">Campaña de Brightcove</option>
+        
+      
+        
+          <option value="https://engage.support.brightcove.com">Brightcove Engage</option>
+        
+      
+        
+          <option value="https://live.support.brightcove.com">Brightcove Live</option>
+        
+      
+        
+          <option value="https://gallery.support.brightcove.com">Brightcove Gallery</option>
+        
+      
+        
+          <option value="https://ssai.support.brightcove.com">Brightcove SSAI</option>
+        
+      
+        
+          <option value="https://social.support.brightcove.com">Brightcove Social</option>
+        
+      
+        
+          <option value="https://studio.support.brightcove.com">Video Cloud Studio</option>
+        
+      
+        
+          <option value="https://player.support.brightcove.com">Desarrollo de jugadores de Brightcove</option>
+        
+      
+        
+          <option value="https://apis.support.brightcove.com">API para la plataforma de Video Cloud</option>
+        
+      
+        
+          <option value="https://sdks.support.brightcove.com">SDK de dispositivos de Video Cloud</option>
+        
+      
+        
+          <option value="https://integrations.support.brightcove.com">Integraciones y conectores CMS</option>
+        
+      
+        
+          <option value="https://general.support.brightcove.com">Información general de Video Cloud</option>
+        
+      
+        
+          <option value="https://zencoder.support.brightcove.com">Zencoder</option>
+        
+      
+    </select>
+
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="soporte"/> Contactar con Soporte</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/">Estado<img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="estado del sistema"/> del sistema</a></span> <br/>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/encoding-settings/">Configuración de codificación</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Referencia rápida de configuración de codificación</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+        <nav class="sidenav" id="side_nav">
+          
+            
+            <h5><a href="/index.html">Inicio</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/getting-started/index.html">Empezar <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li>Resumen<a href="/getting-started/overview-zencoder.html"></a></li>
+                  
+                
+                  
+                    <li>Inicio rápido<a href="/getting-started/quick-start-zencoder.html"></a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/getting-api-key.html">Obtención de una clave API</a></li>
+                  
+                
+                  
+                    <li>Configuración de salida<a href="/getting-started/output-settings.html"></a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/creating-multiple-outputs.html">Creación de varias salidas</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/general-information/index.html">Información general <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/general-information/faq-basics.html">Conceptos básicos</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/faq-codecs-and-formats.html">Códecs y formatos</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/faq-encoding.html">Codificación</a></li>
+                  
+                
+                  
+                    <li>Transferencias de archivos<a href="/general-information/faq-file-transfers.html"></a></li>
+                  
+                
+                  
+                    <li>Precios de Zencoder<a href="/general-information/faq-zencoder-pricing.html"></a></li>
+                  
+                
+                  
+                    <li>Limitación de Tasa<a href="/general-information/faq-rate-limiting.html"></a></li>
+                  
+                
+                  
+                    <li>Formatos de vídeo y audio compatibles<a href="/general-information/supported-video-and-audio-formats-codecs-and-containers.html"></a></li>
+                  
+                
+                  
+                    <li>Visión general:<a href="/general-information/overview-context-aware-encoding.html"> Codificación consciente del contexto</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/getting-notifications-when-videos-are-finished.html">Obtención de notificaciones cuando terminan los vídeos</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/how-zencoder-saves-your-files-when-uploads-fail.html">Cómo guarda Zencoder los archivos cuando las cargas fallan</a></li>
+                  
+                
+                  
+                    <li>Uso de Zencoder con S3<a href="/general-information/using-zencoder-s3.html"></a></li>
+                  
+                
+                  
+                    <li>Uso de Zencoder con Azure<a href="/general-information/using-zencoder-azure.html"></a></li>
+                  
+                
+                  
+                    <li>Uso de Zencoder con Google Cloud Storage<a href="/general-information/using-zencoder-google-cloud-platform.html"></a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header">Referencias +<a href="/references/index.html"><strong></strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/references/reference.html">Referencia de API</a></li>
+                  
+                
+                  
+                    <li>Problemas conocidos<a href="/references/known-issues.html"></a></li>
+                  
+                
+                  
+                    <li>Actualizaciones de productos<a href="/references/release-notes.html"></a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/encoding-settings/index.html">Configuración de codificación <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/encoding-settings/general/index.html">Configuración general <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/encoding-settings/general/encoding-settings-job.html">Configuración del trabajo</a></li>
+                        
+                        <li><a href="/encoding-settings/general/encoding-settings-general-output-settings.html">Configuración general de salida</a></li>
+                        
+                        <li><a href="/encoding-settings/general/cae-settings.html">Configuración de CAE</a></li>
+                        
+                        <li><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html">Configuración de salidas condicionales</a></li>
+                        
+                        <li>Configuración de notificaciones<a href="/encoding-settings/general/encoding-settings-notifications.html"></a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/encoding-settings/general-audio-video/index.html">Configuración de audio/vídeo <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html">Configuración de audio</a></li>
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html">Configuración de procesamiento de audio</a></li>
+                        
+                        <li>Configuración de vídeo<a href="/encoding-settings/general-audio-video/encoding-settings-video.html"></a></li>
+                        
+                        <li>Configuración de procesamiento de vídeo<a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html"></a></li>
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html">Configuración de difusión</a></li>
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html">Configuración de velocidad de cuadro</a></li>
+                        
+                        <li>Configuración de control de velocidad<a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html"></a></li>
+                        
+                        <li>Configuración de resolución<a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html"></a></li>
+                        
+                        <li>Configuración de transmisión segmentada<a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html"></a></li>
+                        
+                        <li>Configuración de transmuxing<a href="/encoding-settings/general-audio-video/encoding-settings-transmuxing.html"></a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/encoding-settings/formats-codecs/index.html">Formatos y configuración de códec <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html">Configuración de formato y códecs</a></li>
+                        
+                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-aac.html">Configuración de AAC</a></li>
+                        
+                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-flv.html">Configuración de FLV</a></li>
+                        
+                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html">Configuración HDR</a></li>
+                        
+                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html">Configuración de H.264</a></li>
+                        
+                        <li>Configuración de MP4<a href="/encoding-settings/formats-codecs/encoding-settings-mp4.html"></a></li>
+                        
+                        <li>Configuración de VP6<a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html"></a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      Configuración de activos multimedia +<a href="/encoding-settings/assets/index.html"><strong></strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/encoding-settings/assets/encoding-settings-captions.html">Configuración de subtítulos</a></li>
+                        
+                        <li><a href="/encoding-settings/assets/encoding-settings-clips.html">Configuración de clips</a></li>
+                        
+                        <li>Configuración de miniaturas<a href="/encoding-settings/assets/encoding-settings-thumbnails.html"></a></li>
+                        
+                        <li>Configuración de marcas de agua<a href="/encoding-settings/assets/encoding-settings-watermarks.html"></a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/encoding-settings/content-protection/index.html">Configuración de protección de contenido <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/encoding-settings/content-protection/encoding-settings-encryption.html">Configuración de cifrado</a></li>
+                        
+                        <li><a href="/encoding-settings/content-protection/encoding-settings-decryption.html">Configuración de descifrado</a></li>
+                        
+                        <li><a href="/encoding-settings/content-protection/encoding-settings-drm.html">Configuración de DRM</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      Configuración de origenes/destino +<a href="/encoding-settings/sources-destinations/index.html"><strong></strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li>Configuración de S3<a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html"></a></li>
+                        
+                        <li><a href="/encoding-settings/sources-destinations/encoding-settings-aspera.html">Configuración de Aspera</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/encoding-guides/index.html">Guías de codificación <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/encoding-guides/advanced-audio-mapping-guide.html">Guía de asignación de audio</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/as11-mxf.html">Guía de AS-11-MXF</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/avc-intra-guide.html">Guía AVC-Intra</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/cae-guide.html">Guía CAE</a></li>
+                  
+                
+                  
+                    <li>Guía de transmuxing<a href="/encoding-guides/creating-mp4-and-hls-outputs-together.html"></a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/dash-streaming-and-playlists.html">DASH Streaming y listas de reproducción</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/h264-advanced-guide.html">Guía avanzada de H.264</a></li>
+                  
+                
+                  
+                    <li>Formatos de vídeo HDR admitidos<a href="/encoding-guides/hdr10-video-output.html"></a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/hevch265-guide.html">Guía de HEVC/H.265</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/highwinds-smil.html">Guía de Highwinds SMIL</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/html5-encoding.html">Codificación HTML5</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/http-live-segmented-streaming-and-playlists.html">Streaming HLS y listas de reproducción</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/http-live-streaming-using-fragmented-mp4.html">HLS usando MP4 fragmentado</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/iosmobile-encoding.html">Guía de codificación iOS/Mobile</a></li>
+                  
+                
+                  
+                    <li>Transmisión fluida de Microsoft<a href="/encoding-guides/microsoft-smooth-streaming.html"></a></li>
+                  
+                
+                  
+                    <li>Modos de codificación basados en calidad para streaming<a href="/encoding-guides/using-quality-based-encoding-modes-streaming-video.html"></a></li>
+                  
+                
+                  
+                    <li>Guía avanzada de VP6<a href="/encoding-guides/vp6-advanced-guide.html"></a></li>
+                  
+                
+                  
+                    <li>Guía de VP9<a href="/encoding-guides/vp9-guide.html"></a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/error-troubleshooting/index.html">Errores/Solución de problemas <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/error-troubleshooting/problems.html">Problemas comunes</a></li>
+                  
+                
+                  
+                    <li>Aperturas de la región<a href="/error-troubleshooting/region-outages.html"></a></li>
+                  
+                
+                  
+                    <li>Cuándo volver a intentar trabajos fallidos<a href="/error-troubleshooting/when-should-i-retry-failed-jobs.html"></a></li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/error-troubleshooting/error-codes/index.html">Códigos de error <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-akamainetstoragefilesizeerror.html">AkamainetStorageFileError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-checksummismatcherror.html">CheckSummisMatchError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-dimensiontoosmallerror.html">DimensionToosMallError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-downloadaccessdeniederror.html">DescargarAccessDeniedError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-downloadfailureerror.html">DescargarFailureError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-downloadtimeouterror.html">DescargarTimeouTerror</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-filenotfounderror.html">FileNotFounderError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-inaccuratedurationerror.html">FicheroPermanentlyMovedError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-inaccuratedurationerror.html">Error impreciadurationError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-incompatiblewithdynamicprofileserror.html">IncompatibleWithDynamicProfilesError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-inputfilenotfound.html">InputFileNotFound</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidaccesskeyiderror.html">InvalidAccessKeyIdError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidaudiosettingserror.html">InvalidAudioSettingsError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidcodeccombinationerror.html">InvalidCodecCombinationError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invaliddownloadedfiletypeerror.html">InvalidDescargarFileTypeError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidencryptionsettingserror.html">InvalidEncryptionSettingsError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidfilepatherror.html">InvalidFilePatherError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidformatcodecerror.html">InvalidFormatCodeCError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidframerateerror.html">InvalidFrameRateError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidusernameorpassworderror.html">InvalidUserNameOrPasswordError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidvideobitrateerror.html">InvalidVideoObitrateError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidvideosettingserror.html">InvalidVideoSettingsError</a></li>
+                        
+                        <li>NomediaError<a href="/error-troubleshooting/error-codes/error-nomediaerror.html"></a></li>
+                        
+                        <li>QuickTimeReferenceError<a href="/error-troubleshooting/error-codes/error-quicktimereferenceerror.html"></a></li>
+                        
+                        <li>RemoteServerProblemError<a href="/error-troubleshooting/error-codes/error-remoteserverproblemerror.html"></a></li>
+                        
+                        <li>RTMPAuthFaileError<a href="/error-troubleshooting/error-codes/error-rtmpauthfailederror.html"></a></li>
+                        
+                        <li>RTMPMaxStreamsXidAlcanzado<a href="/error-troubleshooting/error-codes/error-rtmpmaxstreamsxidreached.html"></a></li>
+                        
+                        <li>RTMPStreamNameAlreadyInuse<a href="/error-troubleshooting/error-codes/error-rtmpstreamnamealreadyinuse.html"></a></li>
+                        
+                        <li>S3BucketNotFounderError<a href="/error-troubleshooting/error-codes/error-s3bucketnotfounderror.html"></a></li>
+                        
+                        <li>SegmentaciónError<a href="/error-troubleshooting/error-codes/error-segmentingerror.html"></a></li>
+                        
+                        <li>SkippedSourceError<a href="/error-troubleshooting/error-codes/error-skippedsourceerror.html"></a></li>
+                        
+                        <li>ThumbnailError<a href="/error-troubleshooting/error-codes/error-thumbnailerror.html"></a></li>
+                        
+                        <li>Error de transcodificación<a href="/error-troubleshooting/error-codes/error-transcodingerror.html"></a></li>
+                        
+                        <li>Transferencia። InvalidGranteEGroupURLError<a href="/error-troubleshooting/error-codes/error-transferinvalidgranteegroupurlerror.html"></a></li>
+                        
+                        <li>Transferencia። InvalidGranteeIdError<a href="/error-troubleshooting/error-codes/error-transferinvalidgranteeiderror.html"></a></li>
+                        
+                        <li>TrunCatedFileError<a href="/error-troubleshooting/error-codes/error-truncatedfileerror.html"></a></li>
+                        
+                        <li>UnableToCreateDynamicProfilesError<a href="/error-troubleshooting/error-codes/error-unabletocreatedynamicprofileserror.html"></a></li>
+                        
+                        <li>InesperadDownloadProblemError<a href="/error-troubleshooting/error-codes/error-unexpecteddownloadproblemerror.html"></a></li>
+                        
+                        <li>UnexpectedFFMPegResult<a href="/error-troubleshooting/error-codes/error-unexpectedffmpegresult.html"></a></li>
+                        
+                        <li>UnexpectedMPlayerResult<a href="/error-troubleshooting/error-codes/error-unexpectedmplayerresult.html"></a></li>
+                        
+                        <li>Resultado inesperadoProgenResult<a href="/error-troubleshooting/error-codes/error-unexpectedprogenresult.html"></a></li>
+                        
+                        <li>ResultError inesperadoResultado<a href="/error-troubleshooting/error-codes/error-unexpectedresulterror.html"></a></li>
+                        
+                        <li>Error inesperadoDuploadProblemError<a href="/error-troubleshooting/error-codes/error-unexpecteduploadproblemerror.html"></a></li>
+                        
+                        <li>Resultado inesperadoX264resultado<a href="/error-troubleshooting/error-codes/error-unexpectedx264result.html"></a></li>
+                        
+                        <li>IlegibleFileError<a href="/error-troubleshooting/error-codes/error-unreadablefileerror.html"></a></li>
+                        
+                        <li>UnSupportedCodeCError<a href="/error-troubleshooting/error-codes/error-unsupportedcodecerror.html"></a></li>
+                        
+                        <li>UnSupportedEncodingError<a href="/error-troubleshooting/error-codes/error-unsupportedencodingerror.html"></a></li>
+                        
+                        <li>UnSupportedEncryptionError<a href="/error-troubleshooting/error-codes/error-unsupportedencryptionerror.html"></a></li>
+                        
+                        <li>UnSupportedTranscodeCombinationError<a href="/error-troubleshooting/error-codes/error-unsupportedtranscodecombinationerror.html"></a></li>
+                        
+                        <li>UploadAccessDeniedError<a href="/error-troubleshooting/error-codes/error-uploadaccessdeniederror.html"></a></li>
+                        
+                        <li>UploadFailureError<a href="/error-troubleshooting/error-codes/error-uploadfailureerror.html"></a></li>
+                        
+                        <li>UploadServerNotFounderError<a href="/error-troubleshooting/error-codes/error-uploadservernotfounderror.html"></a></li>
+                        
+                        <li>UploadTimeouTerror<a href="/error-troubleshooting/error-codes/error-uploadtimeouterror.html"></a></li>
+                        
+                        <li>WorkerTimeOutError<a href="/error-troubleshooting/error-codes/error-workertimeouterror.html"></a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/integration/index.html">Integración <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/integration/faq-integration-libraries.html">Bibliotecas de integración</a></li>
+                  
+                
+                  
+                    <li><a href="/integration/100-integration-reliability.html">100% de fiabilidad de integración</a></li>
+                  
+                
+                  
+                    <li>Trabajos de prueba y modo de integración<a href="/integration/test-jobs-and-integration-mode.html"></a></li>
+                  
+                
+                  
+                    <li>Uso de claves API de sólo lectura<a href="/integration/using-read-only-api-keys.html"></a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header">Soporte +<a href="/support/index.html"><strong></strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/brightcove-answer.html">Respuestas de Brightcove</a></li>
+                  
+                
+                  
+                    <li>Visualización de la página Estado del Sistema de Brightcove<a href="/support/viewing-brightcove-system-status-page.html"></a></li>
+                  
+                
+                  
+                    <li><a href="/support/contact-sales.html">Contacto con Ventas</a></li>
+                  
+                
+                  
+                    <li>Apertura de un caso de soporte<a href="/support/opening-case-with-brightcove-support.html"></a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+  <!-- bootstrap layout -->
+
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="Menú de navegación"/></p>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">Contenido de la página</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="abrir en una nueva pestaña" style="margin-top:4em;width: 1.5em;"/></a>
+
+
+
+  
+    
+
+
+<style>
+  .bcls-table td>a>code {
+    font-size: .9rem;
+    white-space: nowrap;
+  }
+</style>
+<article class="bcls-article">
+  <h1>Ajustes de codificación</h1>
+  <summary>En este tema se proporcionan tablas de todas las configuraciones de codificación con vínculos a guías detalladas de cada configuración.</summary>
+  <section class="bcls-section">
+    <h2 id="job">Tarea</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#api_key"><code translate="No">api_key</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>La clave de API para su cuenta de Zencoder.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#dynamic_profile_options"><code translate="No">dynamic_profile_options</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Con CAE, el número de salidas y parámetros de dichas salidas puede cambiar dinámicamente para cada archivo de entrada. La configuración de dynamic_profile_options define la forma en que se deben crear las copias.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#generate_dynamic_profile"><code translate="No">generate_dynamic_profile</code></a></td>
+          <td>falso</td>
+          <td>Con CAE, el número de salidas y parámetros de dichas salidas puede cambiar dinámicamente para cada archivo de entrada.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#input"><code translate="No">input</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Una URL HTTP, S3, Cloud Files, GCS, FTP, FTPS, SFTP, Azure o Aspera donde podemos descargar archivos para transcodificar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Una matriz o hash de la configuración de salida.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#region"><code translate="No">region</code></a></td>
+          <td>nosotros</td>
+          <td>Región en la que se procesa un archivo: Estados Unidos, Europa, Asia o Australia.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#test"><code translate="No">test</code></a></td>
+          <td>falso</td>
+          <td>Habilite el modo de prueba («Modo de integración») para un trabajo.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#private"><code translate="No">private</code></a></td>
+          <td>falso</td>
+          <td>Habilitar el modo de privacidad para un trabajo.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#download_connections"><code translate="No">download_connections</code></a></td>
+          <td>5</td>
+          <td>Utilice múltiples conexiones simultáneas para acelerar la descarga (en algunas circunstancias).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#pass_through"><code translate="No">pass_through</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Información opcional para almacenar junto a este trabajo.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#mock"><code translate="No">mock</code></a></td>
+          <td>falso</td>
+          <td>Envíe una solicitud de trabajo burlada.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#grouping"><code translate="No">grouping</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Una agrupación de informes para este trabajo.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#aspera_transfer_policy"><code translate="No">aspera_transfer_policy</code></a></td>
+          <td>justo</td>
+          <td>Cómo asignar ancho de banda disponible para transferencias de archivos Aspera.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#transfer_minimum_rate"><code translate="No">transfer_minimum_rate</code></a></td>
+          <td>1000</td>
+          <td>Una velocidad objetivo en Kbps para los mínimos de transferencia de datos.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#transfer_maximum_rate"><code translate="No">transfer_maximum_rate</code></a></td>
+          <td>250000</td>
+          <td>Una velocidad objetivo en Kbps para máximos de transferencia de datos.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#expected_md5_checksum"><code translate="No">expected_md5_checksum</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>La suma de comprobación esperada del archivo de entrada.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#credentials"><code translate="No">credentials</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Referencias a credenciales guardadas por un apodo.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="general-output-settings">Configuración general de salida</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#type"><code translate="No">type</code></a></td>
+          <td>estándar</td>
+          <td>El tipo de archivo que se va a generar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#label"><code translate="No">label</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Etiqueta opcional para esta salida.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#dynamic_profile_rendition"><code translate="No">dynamic_profile_rendition</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>La configuración dynamic_profile_rendition especifica que esta salida debe utilizar la configuración del perfil CAE generado dinámicamente, y específicamente la copia del perfil desde la que se utilizará la configuración.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#url"><code translate="No">url</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Una URL S3, Cloud Files, GCS, FTP, FTP, SFTP, Aspera, Azure, HTTP o RTMP donde colocaremos el archivo transcodificado.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#secondary_url"><code translate="No">secondary_url</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Una URL S3, Cloud Files, GCS, FTP, FTP, SFTP, HTTP, RTMP, Aspera o Azure donde colocaremos el archivo transcodificado.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#base_url"><code translate="No">base_url</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Una dirección URL de directorio S3, Cloud Files, GCS, FTP, FTP, SFTP, Azure o Aspera donde pondremos el archivo transcodificado, sin nombre de archivo.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#filename"><code translate="No">filename</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Nombre de archivo de un archivo terminado.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#package_filename"><code translate="No">package_filename</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>El nombre de archivo de una salida empaquetada.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#package_format"><code translate="No">package_format</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Formato de comprimido/empaquetado que se utilizará para los archivos de salida.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#device_profile"><code translate="No">device_profile</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Un perfil de dispositivo que se va a utilizar para la compatibilidad con dispositivos móviles.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#strict"><code translate="No">strict</code></a></td>
+          <td>falso</td>
+          <td>Habilite el modo estricto.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#skip_video"><code translate="No">skip_video</code></a></td>
+          <td>falso</td>
+          <td>No emite una pista de vídeo.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#skip_audio"><code translate="No">skip_audio</code></a></td>
+          <td>falso</td>
+          <td>No emite una pista de audio.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#source"><code translate="No">source</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Hace referencia a una etiqueta en otro trabajo y utiliza el vídeo creado por esa salida para procesarlo en lugar del archivo de entrada.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#credentials"><code translate="No">credentials</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Referencias a credenciales guardadas por un apodo.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#generate_md5_checksum"><code translate="No">generate_md5_checksum</code></a></td>
+          <td>falso</td>
+          <td>Genere una suma de comprobación MD5 del archivo de salida.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#parallel_upload_limit"><code translate="No">parallel_upload_limit</code></a></td>
+          <td>30 para S3, 10 para todos los demás destinos.</td>
+          <td>El número máximo de cargas simultáneas que se deben intentar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#headers"><code translate="No">headers</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>encabezados HTTP para enviar con su archivo cuando lo subamos.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="cae-settings">Configuración de CAE</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#min_renditions"><code translate="No">min_renditions</code></a></td>
+          <td>1</td>
+          <td>El número mínimo de copias que se generarán.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#max_renditions"><code translate="No">The maximum number of renditions to generate</code></a></td>
+          <td>8</td>
+          <td>El número máximo de copias que se generarán.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#min_resolution"><code translate="No">min_resolution</code></a></td>
+          <td>192x108</td>
+          <td>Resolución mínima a tener en cuenta para la escalera.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#max_resolution"><code translate="No">max_resolution</code></a></td>
+          <td>resolución de origen</td>
+          <td>Resolución máxima a tener en cuenta para la escalera.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#max_frame_rate"><code translate="No">max_frame_rate</code></a></td>
+          <td>30</td>
+          <td>Velocidad máxima de fotogramas que se puede utilizar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#keyframe_rate"><code translate="No">keyframe_rate</code></a></td>
+          <td>0.5</td>
+          <td>Velocidad de fotogramas clave. Este valor puede ser 0.5 o 1. Para el contenido habilitado para SSAI, este valor debe ser 1.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#fixed_frame_rate"><code translate="No">fixed_frame_rate</code></a></td>
+          <td>true</td>
+          <td>Indica al generador que utilice la misma velocidad de fotogramas en todas las copias. Si es falso, las copias de perfil de línea base H.264 con resoluciones inferiores a 360p se les asignará la velocidad de fotogramas a la mitad.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#min_bitrate"><code translate="No">min_bitrate</code></a></td>
+          <td>200</td>
+          <td>Velocidad de bits mínima [kbps] que se puede utilizar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#max_bitrate"><code translate="No">max_bitrate</code></a></td>
+          <td>15000</td>
+          <td>Velocidad de bits máxima [kbps] que se puede utilizar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#max_first_rendition_bitrate"><code translate="No">max_first_rendition_bitrate</code></a></td>
+          <td>400</td>
+          <td>Velocidad de bits máxima [kbps] que se puede utilizar para la primera copia.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#min_granularity"><code translate="No">min_granularity</code></a></td>
+          <td>30</td>
+          <td>Cambio relativo mínimo en la velocidad de bits entre copias.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#max_granularity"><code translate="No">max_granularity</code></a></td>
+          <td>90</td>
+          <td>Cambio relativo máximo en la velocidad de bits entre copias.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#video_codec"><code translate="No">video_codec</code></a></td>
+          <td>h264</td>
+          <td>Códec de vídeo a usar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#bitrate_cap_to_bitrate_ratio"><code translate="No">bitrate_cap_to_bitrate_ratio</code></a></td>
+          <td>1.3</td>
+          <td>Relación entre la velocidad de bits máxima y la velocidad de bits media que se utilizará para la codificación VBR.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#buffer_size_to_bitrate_ratio"><code translate="No">buffer_size_to_bitrate_ratio</code></a></td>
+          <td>2.0</td>
+          <td>Relación entre el tamaño del búfer del decodificador y la velocidad de bits promedio que se utilizará para la codificación VBR.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#bitrate_cap_offset"><code translate="No">bitrate_cap_offset</code></a></td>
+          <td>64</td>
+          <td>Constante agregada al calcular la velocidad de bits máxima.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#buffer_size_offset"><code translate="No">buffer_size_offset</code></a></td>
+          <td>85</td>
+          <td>Constante agregada al calcular el tamaño del búfer VBV.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#rtmp_keep_alive"><code translate="No">quality_rate_tune</code></a></td>
+          <td>0</td>
+          <td>Parámetro de ajuste de calidad vs velocidad.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#select_baseline_profile_configuration"><code translate="No">select_baseline_profile_configuration</code></a></td>
+          <td>true</td>
+          <td>Al menos una copia utilizada en el perfil será perfil de línea base.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#video_configurations"><code translate="No">video_configurations</code></a></td>
+          <td>
+            <span class="none">Ninguno </span>
+          </td>
+          <td>Un conjunto de estructuras que describen resoluciones, velocidades de fotogramas y configuraciones de códec asociadas que deben generarse preferencial o obligatoriamente como parte de la codificación CAE.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Format_and_Codecs">Formato y códecs</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html#format"><code translate="No">format</code></a></td>
+          <td>Determinada por el nombre de archivo de salida y, a continuación, el códec de vídeo o audio. De lo contrario: mp4 (para salidas estándar); ts (para salidas segmentadas).</td>
+          <td>El formato de salida que se va a utilizar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html#video_codec"><code translate="No">video_codec</code></a></td>
+          <td>Determinada por el formato, perfil o <a href="/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html#audio_codec"> <code translate="No">audio_codec</code></a>. h264 si no se proporciona ninguno.</td>
+          <td>El códec de vídeo que se va a utilizar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html#audio_codec"><code translate="No">audio_codec</code></a></td>
+          <td>Determinada por el formato, perfil o <a href="/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html#video_codec"> <code translate="No">video_codec</code></a>. aac si no se proporciona ninguno.</td>
+          <td>El códec de audio que se va a utilizar.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="resolution">Resolución</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html#size"><code translate="No">size</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Resolución del vídeo de salida (WxH, en píxeles).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html#width"><code translate="No">width</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>El ancho máximo del vídeo de salida (en píxeles).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html#height"><code translate="No">height</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>La altura máxima del vídeo de salida (en píxeles).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html#upscale"><code translate="No">upscale</code></a></td>
+          <td>falso</td>
+          <td>Aumente la salida si la entrada es menor que la resolución de salida de destino.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html#aspect_mode"><code translate="No">aspect_mode</code></a></td>
+          <td>preservar</td>
+          <td>Qué hacer cuando la relación de aspecto del archivo de entrada no coincide con la relación de aspecto anchura/altura de destino.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html#sample_aspect_ratio"><code translate="No">sample_aspect_ratio</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>La relación de aspecto de muestra (píxel) que se utilizará para el vídeo de salida. Las opciones de tamaño, ancho, alto y <code translate="No">aspect_mode</code> modo hacen referencia a las dimensiones de píxeles codificados, no a las dimensiones de visualización.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html#force_interlace_headers"><code translate="No">force_interlace_headers</code></a></td>
+          <td><span class="none">falso</span></td>
+          <td>Algunos decodificadores piden contenido entrelazado, pero jugarán el contenido progresivo muy bien. Esta configuración agregará encabezados «entrelazados» a los metadatos del contenido progresivo, para que parezca que realmente está entrelazado.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Rate_Control">Control de la tasa</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#quality"><code translate="No">quality</code></a></td>
+          <td>3</td>
+          <td>Seleccione automáticamente la mejor velocidad de bits de vídeo para que coincida con una calidad visual de destino.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#video_bitrate"><code translate="No">video_bitrate</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Una velocidad de bits de vídeo de destino en kbps. No es necesario si selecciona una configuración de calidad, a menos que desee segmentar una velocidad de bits específica.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#audio_quality"><code translate="No">audio_quality</code></a></td>
+          <td>3</td>
+          <td>Seleccione automáticamente la mejor velocidad de bits de audio para que coincida con la calidad de sonido de destino.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#audio_bitrate"><code translate="No">audio_bitrate</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Una velocidad de bits de audio de destino en kbps. No es necesario si selecciona una <code translate="No">audio_quality</code> configuración, a menos que desee segmentar una velocidad de bits específica.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#max_video_bitrate"><code translate="No">max_video_bitrate</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Una velocidad de bits media máxima.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#speed"><code translate="No">speed</code></a></td>
+          <td>3</td>
+          <td>Una velocidad de transcodificación objetivo. La codificación más lenta generalmente permite una compresión más avanzada.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#decoder_bitrate_cap"><code translate="No">decoder_bitrate_cap</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Velocidad de bits máxima alimentada al búfer del decodificador. Normalmente se utiliza para vídeo destinado a streaming o para segmentar dispositivos específicos (p. ej. <code translate="No">Blu-Ray</code>).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#decoder_buffer_size"> <code translate="No">decoder_buffer_size</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Tamaño del búfer del decodificador, utilizado junto con <code translate="No">bitrate_cap</code>.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#one_pass"><code translate="No">one_pass</code></a></td>
+          <td>falso</td>
+          <td>Forzar la codificación de una sola pasada.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#audio_constant_bitrate"><code translate="No">audio_constant_bitrate</code></a></td>
+          <td>falso</td>
+          <td>Habilite el modo de velocidad de bits constante para audio si es posible.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Frame_Rate">Imágenes por segundo</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#frame_rate"><code translate="No">frame_rate</code></a></td>
+          <td>La velocidad de fotogramas original (entrada).</td>
+          <td>La velocidad de fotogramas a usar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#max_frame_rate"><code translate="No">max_frame_rate</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>La velocidad máxima de fotogramas que se utilizará.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#decimate"><code translate="No">decimate</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Reduzca la velocidad de fotogramas de entrada mediante un divisor.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#keyframe_interval"><code translate="No">keyframe_interval</code></a></td>
+          <td>250</td>
+          <td>Número máximo de fotogramas entre cada fotograma clave. Para el vídeo H.264, los fotogramas clave son fotogramas IDR.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#keyframe_rate"><code translate="No">keyframe_rate</code></a></td>
+          <td><code translate="No">keyframe_interval</code> de 250</td>
+          <td>El número de fotogramas clave por segundo.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#fixed_keyframe_interval"><code translate="No">fixed_keyframe_interval</code></a></td>
+          <td>falso</td>
+          <td>Habilite el modo de intervalo de fotogramas clave fijo (sólo VP6, VP8, VP9 y H.264).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#forced_keyframe_interval"><code translate="No">forced_keyframe_interval</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Forzar fotogramas clave en el intervalo especificado (sólo H.264).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#forced_keyframe_rate"><code translate="No">forced_keyframe_rate</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Especifique el número de fotogramas clave por segundo, teniendo en cuenta la velocidad de fotogramas (sólo H.264).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#generate_frame_index"><code translate="No">generate_frame_index</code></a></td>
+          <td>falso</td>
+          <td>Generar un archivo de índice de fotogramas de vídeo</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#frame_index_filename"><code translate="No">frame_index_filename</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Anule el nombre de archivo predeterminado para el índice de fotograma cuando <a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#generate_frame_index"> <code translate="No">generate_frame_index</code></a> esté habilitado.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Video">Vídeo</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video.html#video_reference_frames"><code translate="No">video_reference_frames</code></a></td>
+          <td>3</td>
+          <td>Una serie de marcos de referencia a utilizar (H.264, HEVC).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video.html#video_codec_profile"><code translate="No">video_codec_profile</code></a></td>
+          <td>H.264: base de referencia, HEVC: principal, VP9: 0</td>
+          <td>El perfil de códec de vídeo que se va a utilizar (H.264, HEVC, VP9).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video.html#video_codec_level"><code translate="No">video_codec_level</code></a></td>
+          <td>Calculado automáticamente utilizando un gráfico de niveles basado en el vídeo de salida. Véase <a href="http://en.wikipedia.org/wiki/H.264#Levels"><code translate="No">H.264-levels</code></a>, <a href=" http://en.wikipedia.org/wiki/High_Efficiency_Video_Coding#Tiers_and_levels"> <code translate="No">HEVC-levels</code></a></td>
+          <td>El nivel de códec de vídeo que se va a utilizar (H.264, HEVC).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video.html#video_bframes"> <code translate="No">video_bframes</code></a></td>
+          <td>0</td>
+          <td>El número máximo de fotogramas B consecutivos (H.264, HEVC)</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video.html#color_metadata"><code translate="No">color_metadata</code></a></td>
+          <td>preservar</td>
+          <td>Conserve o descarte la información de metadatos de color de la entrada en el vídeo de salida.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Audio">Audio</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html#audio_sample_rate"><code translate="No">audio_sample_rate</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Frecuencia de muestreo de audio, en Hz.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html#max_audio_sample_rate"><code translate="No">max_audio_sample_rate</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Frecuencia máxima de muestreo de audio, en Hz.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html#audio_channels"><code translate="No">audio_channels</code></a></td>
+          <td>1 si el archivo original es mono; en caso contrario, 2.</td>
+          <td>El número de canales de audio: 1 o 2.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html#audio_bit_depth"><code translate="No">audio_bit_depth</code></a></td>
+          <td>16</td>
+          <td>El número de bits por muestra: 16, 24, 32.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html#audio_language"><code translate="No">audio_language</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Describe el idioma de la pista de audio.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html#input_audio_channels"><code translate="No">input_audio_channels</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Establece el diseño de las pistas de audio de entrada a los canales..</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html#output_audio_channels"><code translate="No">output_audio_channels</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Establece el diseño del canal de audio de salida.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Thumbnails">Miniaturas</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#thumbnails"><code translate="No">thumbnails</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Captura miniaturas de un vídeo determinado.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#label"><code translate="No">label</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Una etiqueta para identificar cada conjunto de grupos de miniaturas.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#format"><code translate="No">format</code></a></td>
+          <td>png</td>
+          <td>El formato de la imagen en miniatura.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#number"><code translate="No">number</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Una serie de miniaturas, espaciadas uniformemente.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#start_at_first_frame"><code translate="No">start_at_first_frame</code></a></td>
+          <td>falso</td>
+          <td>Comience a generar las miniaturas comenzando por el primer fotograma.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#interval"><code translate="No">interval</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Tome miniaturas en un intervalo uniforme, en segundos.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#interval_in_frames"><code translate="No">interval_in_frames</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Tome miniaturas en un intervalo uniforme, en fotogramas.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#times"><code translate="No">times</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Una matriz de veces, en segundos, en las que tomar una miniatura.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#aspect_mode"><code translate="No">aspect_mode</code></a></td>
+          <td>preservar</td>
+          <td>Cómo manejar un ancho/alto de miniatura que difiere de la relación de aspecto del archivo de entrada.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#size"><code translate="No">size</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Resolución de miniatura como <code translate="No">WxH</code>.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#width"><code translate="No">width</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>El ancho máximo de la miniatura (en píxeles).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#height"><code translate="No">height</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>La altura máxima de la miniatura (en píxeles).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#base_url"><code translate="No">base_url</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Una URL de directorio base S3, Cloud Files, GCS, FTP, FTPS o SFTP donde colocaremos las miniaturas, sin nombre de archivo.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#prefix"><code translate="No">prefix</code></a></td>
+          <td>fotograma</td>
+          <td>Prefijo para nombres de archivo en miniatura.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#filename"><code translate="No">filename</code></a></td>
+          <td>fotograma</td>
+          <td>Nombre de archivo de miniatura interpolada.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#public"><code translate="No">public</code></a></td>
+          <td>falso</td>
+          <td>Haga que la salida sea legible públicamente en S3.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#access_control"><code translate="No">access_control</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Reglas de control de acceso detalladas para archivos enviados a S3.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#grantee"><code translate="No">grantee</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Establezca el beneficiario para permisos de control de acceso S3 detallados.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#permission"><code translate="No">permission</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Establezca el permiso para un beneficiario cuando utilice un control de acceso detallado.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#rss"><code translate="No">rrs</code></a></td>
+          <td>falso</td>
+          <td>Almacenamiento de redundancia reducida de Amazon S3.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#headers"><code translate="No">headers</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td><code translate="No">HTTP headers</code> para enviar con sus miniaturas cuando las subamos.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#credentials"><code translate="No">credentials</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Referencias a credenciales guardadas por un apodo.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#parallel_upload_limit"><code translate="No">parallel_upload_limit</code></a></td>
+          <td>30 para S3, 10 para todos los demás destinos.</td>
+          <td>El número máximo de cargas simultáneas que se deben intentar.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Watermarks">Marcas de agua</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-watermarks.html#watermarks"><code translate="No">watermarks</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Añada una o más marcas de agua a un vídeo de salida.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-watermarks.html#url"><code translate="No">url</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>La dirección URL de un archivo de imagen remota que se va a utilizar como marca de agua.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-watermarks.html#x"><code translate="No">x</code></a></td>
+          <td>-10</td>
+          <td>Dónde colocar una marca de agua, en el eje x.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-watermarks.html#y"><code translate="No">y</code></a></td>
+          <td>-10</td>
+          <td>Dónde colocar una marca de agua, en el eje y.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-watermarks.html#width"><code translate="No">width</code></a></td>
+          <td>Escale hasta <a href="/encoding-settings/assets/encoding-settings-watermarks.html#height">la altura</a> o el ancho original de la imagen.</td>
+          <td>El ancho escalado de una marca de agua.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-watermarks.html#height"><code translate="No">height</code></a></td>
+          <td>Escale hasta el <a href="/encoding-settings/assets/encoding-settings-watermarks.html#width">ancho</a> o la altura original de la imagen.</td>
+          <td>La altura escalada de una marca de agua.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-watermarks.html#origin"><code translate="No">origin</code></a></td>
+          <td>contenido</td>
+          <td>En qué parte de la salida se debe basar la posición de la marca de agua.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-watermarks.html#opacity"><code translate="No">opacity</code></a></td>
+          <td>1.0</td>
+          <td>Haga que la marca de agua sea transparente.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Captions">Subtítulos</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-captions.html#caption_url"><code translate="No">caption_url</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>URL a un archivo de subtítulos SCC, DFXP o SAMI para incluirlo en la salida.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-captions.html#skip_captions"><code translate="No">skip_captions</code></a></td>
+          <td>falso</td>
+          <td>No agregue o pase a través de subtítulos al archivo de salida.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Video_Processing">Procesamiento de vídeo</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html#rotate"><code translate="No">rotate</code></a></td>
+          <td>detectado automáticamente</td>
+          <td>Gire un vídeo.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html#deinterlace"><code translate="No">deinterlace</code></a></td>
+          <td>detectar</td>
+          <td>Vídeo de entrada de desentrelazado.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html#sharpen"><code translate="No">sharpen</code></a></td>
+          <td>falso</td>
+          <td>Aplicar un filtro de afilado.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html#denoise"><code translate="No">denoise</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Apply denoise filter.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html#autolevel"><code translate="No">autolevel</code></a></td>
+          <td>falso</td>
+          <td>Aplique un filtro de nivel automático de color.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html#deblock"><code translate="No">deblock</code></a></td>
+          <td>falso</td>
+          <td>Aplicar filtro desbloqueado.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Audio_Processing">Procesamiento de audio</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_gain"><code translate="No">audio_gain</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Aplique una cantidad de ganancia al audio, en dB.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_normalize"><code translate="No">audio_normalize</code></a></td>
+          <td>falso</td>
+          <td>Normalizar el audio a 0dB.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_pre_normalize"><code translate="No">audio_pre_normalize</code></a></td>
+          <td>falso</td>
+          <td>Normalice el audio antes de aplicar efectos de expansión o compresión.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_post_normalize"><code translate="No">audio_post_normalize</code></a></td>
+          <td>falso</td>
+          <td>Normalice el audio después de aplicar efectos de expansión o compresión.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_bass"><code translate="No">audio_bass</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Aumente o disminuya la cantidad de graves en el audio.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_treble"><code translate="No">audio_treble</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Aumente o disminuya la cantidad de agudos en el audio.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_highpass"><code translate="No">audio_highpass</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Aplique un filtro de paso alto al audio.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_lowpass"><code translate="No">audio_lowpass</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Aplique un filtro de paso bajo al audio.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_compression_ratio"><code translate="No">audio_compression_ratio</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Comprima el rango dinámico del audio.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_compression_threshold"><code translate="No">audio_compression_threshold</code></a></td>
+          <td>-20</td>
+          <td>Comprima el rango dinámico del audio.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio-expansion-ratio"><code translate="No">audio_expansion_ratio</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Expanda el rango dinámico del audio.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_expansion_threshold"><code translate="No">audio_expansion_threshold</code></a></td>
+          <td>-35</td>
+          <td>Expanda el rango dinámico del audio.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_fade"><code translate="No">audio_fade</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Aplique efectos de fundido-entrada y fade-out al audio.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_fade_in"><code translate="No">audio_fade_in</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Aplique un efecto de fundido-in al audio.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_loudness_level"><code translate="No">audio_loudness_level</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Ajuste el nivel de sonoridad del audio.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_karaoke_mode"><code translate="No">audio_karaoke_mode</code></a></td>
+          <td>falso</td>
+          <td>Aplica un efecto karaoke al audio.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Clips">Videoclips</h2>
+  </section>
+  <table class="bcls-table">
+    <thead class="bcls-table__head">
+      <tr>
+        <th>Ajuste</th>
+        <th>Predeterminado</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody class="bcls-table__body">
+      <tr>
+        <td><a href="/encoding-settings/assets/encoding-settings-clips.html#start_clip"><code translate="No">start_clip</code></a></td>
+        <td>ninguno<span class="none"></span></td>
+        <td>Codifique sólo una parte del archivo de entrada estableciendo una hora de inicio personalizada.</td>
+      </tr>
+      <tr>
+        <td><a href="/encoding-settings/assets/encoding-settings-clips.html#clip_length"><code translate="No">clip_length</code></a></td>
+        <td>ninguno<span class="none"></span></td>
+        <td>Codifique sólo una parte del archivo de entrada estableciendo una longitud de clip personalizada.</td>
+      </tr>
+    </tbody>
+  </table>
+  <section class="bcls-section">
+    <h2 id="S3_Settings">Configuración de S3</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html#public"><code translate="No">public</code></a></td>
+          <td>falso</td>
+          <td>Haga que la salida sea legible públicamente en S3.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html#rrs"><code translate="No">rrs</code></a></td>
+          <td>falso</td>
+          <td>Almacenamiento de redundancia reducida de Amazon S3.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html#access_control"><code translate="No">access_control</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Reglas de control de acceso detalladas para archivos enviados a S3.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html#grantee"><code translate="No">grantee</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Establezca el beneficiario para los permisos de control de acceso S3 de grano fino.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html#permission"><code translate="No">permission</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Establezca el permiso para un beneficiario cuando utilice access_control de grano fino.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Notifications">Notificaciones</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-notifications.html#notifications"><code translate="No">notifications</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Reciba una notificación cuando se complete un trabajo o una salida.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-notifications.html#url"><code translate="No">url</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Reciba una notificación cuando se complete un trabajo o una salida.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-notifications.html#format"><code translate="No">format</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Formato y tipo de contenido para las notificaciones.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-notifications.html#headers"><code translate="No">headers</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Encabezados para pasar a lo largo de las notificaciones HTTP.</td>
+        </tr>
+        <!-- <tr>
+				<td><a href="/node/17881#event"><code translate="No">event</code></a></td>
+				<td><span class="none">none</span></td>
+				<td>The event that triggers a notification. Used for Live HLS outputs.</td>
+			</tr> -->
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Conditional_Outputs">Salidas condicionales</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#min_size"><code translate="No">min_size</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Omitir salida si las dimensiones de origen son más pequeñas que las dimensiones dadas.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#max_size"><code translate="No">max_size</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Omitir salida si las dimensiones de origen son mayores que las dimensiones dadas.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#min_duration"><code translate="No">min_duration</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Omitir salida si la duración de origen es más corta que la duración dada, en segundos.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#max_duration"><code translate="No">max_duration</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Omitir la salida si la duración del origen es mayor que la duración dada, en segundos.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#min_audio_bitrate"><code translate="No">min_audio_bitrate</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Omitir salida si la velocidad de bits de audio de origen es menor que la velocidad de bits especificada (en kbps).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#max_audio_bitrate"><code translate="No">max_audio_bitrate</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Omitir salida si la velocidad de bits de audio de origen es mayor que la velocidad de bits especificada (en kbps).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#min_video_bitrate"><code translate="No">min_video_bitrate</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Omitir salida si la velocidad de bits de vídeo de origen es menor que la velocidad de bits especificada (en kbps).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#max_video_bitrate"><code translate="No">max_video_bitrate</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Omitir salida si la velocidad de bits de vídeo de origen es mayor que la velocidad de bits especificada (en kbps).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#require_audio"><code translate="No">require_audio</code></a></td>
+          <td>falso</td>
+          <td>Omitir salida si el archivo de origen no incluye una pista de audio.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#require_video"><code translate="No">require_video</code></a></td>
+          <td>falso</td>
+          <td>Omitir la salida si el archivo de origen no incluye una pista de vídeo.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Segmented_Streaming">Transmisión segmentada</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#streaming_delivery_format"><code translate="No">streaming_delivery_format</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Establece la configuración de formato/protocolo para una salida transmisible.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#streaming_delivery_profile"><code translate="No">streaming_delivery_profile</code></a></td>
+          <td>en directo</td>
+          <td>Establece el perfil específico de un formato de entrega de streaming.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#playlist_format"><code translate="No">playlist_format</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Establece el formato de una salida de lista de reproducción.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#segment_seconds"><code translate="No">segment_seconds</code></a></td>
+          <td>10</td>
+          <td>Establece la duración máxima de cada segmento en una salida segmentada.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#alternate_audio"><code translate="No">alternate_audio</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Proporciona un conjunto de secuencias de audio alternativas para listas de reproducción HLS.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#streams"><code translate="No">streams</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Proporciona una lista de información de flujo que se va a dar formato a una lista de reproducción</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#path"><code translate="No">path</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Especifica la ruta de acceso a un archivo de manifiesto de secuencia</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#bandwidth"><code translate="No">bandwidth</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Especifica el ancho de banda de una secuencia de lista de reproducción</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#resolution"><code translate="No">resolution</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Especifica la resolución de una secuencia de lista de reproducción</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#codecs"><code translate="No">codecs</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Especifica los códecs utilizados en una secuencia de lista de reproducción</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#audio"><code translate="No">audio</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Especifica una pista de audio alternativa para la lista de reproducción.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#segment_image_url"><code translate="No">segment_image_url</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Una imagen para mostrar en segmentos de solo audio</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#segment_video_snapshots"><code translate="No">segment_video_snapshots</code></a></td>
+          <td>falso</td>
+          <td>Al segmentar un archivo de vídeo en segmentos de solo audio, tome instantáneas del vídeo como miniaturas para cada segmento.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#source"><code translate="No">source</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Especifica el medio de origen para una secuencia de lista de reproducción</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#max_hls_protocol_version"><code translate="No">max_hls_protocol_version</code></a></td>
+          <td>3 para salidas en vivo, 5 para cifrado AES de muestra; de lo contrario, 2.</td>
+          <td>El protocolo HLS máximo que se va a utilizar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#hls_optimized_ts"><code translate="No">hls_optimized_ts</code></a></td>
+          <td>true</td>
+          <td>Optimice los archivos de segmento TS para HTTP Live Streaming en iOS.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#prepare_for_segmenting"><code translate="No">prepare_for_segmenting</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Incluya subtítulos y temporización de fotogramas clave para segmentar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#smil-base-url"><code translate="No">smil_base_url</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Añadir &lt; meta base="smil_base_url_value»/&gt; a la &gt; sección de &lt; encabezado de una lista de reproducción SMIL.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#byte_range_segmenting"><code translate="No">byte_range_segmenting</code></a></td>
+          <td>falso</td>
+          <td>Configura la segmentación HLS para producir un único archivo de salida en lugar de un archivo por segmento.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#generate_keyframe_manifest"><code translate="No">generate_keyframe_manifest</code></a></td>
+          <td>falso</td>
+          <td>Genera un manifiesto de fotograma clave HLS (fotograma I) que es necesario para la reproducción hacia delante y hacia atrás.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#keyframe_manifest_filename"><code translate="No">keyframe_manifest_filename</code></a></td>
+          <td>iframe_index.m3u8</td>
+          <td>Sustituya el nombre de archivo predeterminado para el manifiesto de fotogramas clave HLS.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#allow_skipped_sources"><code translate="No">allow_skipped_sources</code></a></td>
+          <td>falso</td>
+          <td>Omitir orígenes que son <a href="/encoding-settings/general/encoding-settings-conditional-outputs.html">salidas condicionales</a> que se han omitido.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Encryption">Cifrado</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-encryption.html#encryption_method"><code translate="No">encryption_method</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Establezca el método de cifrado que se va a utilizar para cifrar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-encryption.html#encryption_key"><code translate="No">encryption_key</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Establecer una única clave de cifrado para usar en lugar de hacer que Zencoder genere una</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-encryption.html#encryption_key_url"><code translate="No">encryption_key_url</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Establezca una URL en una única clave de cifrado para usar en lugar de hacer que Zencoder genere una</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-encryption.html#encryption_key_rotation_period"><code translate="No">encryption_key_rotation_period</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Rotar a una nueva clave de cifrado después de varios segmentos</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-encryption.html#encryption_key_url_prefix"><code translate="No">encryption_key_url_prefix</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Anexar las URL de clave con la cadena pasada</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-encryption.html#encryption_iv"><code translate="No">encryption_iv</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Establecer un vector de inicialización para usar al cifrar</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-encryption.html#encryption_password"><code translate="No">encryption_password</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Establece una contraseña que se utilizará para generar un vector de inicialización</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Decryption">Descifrado</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-decryption.html#decryption_method"><code translate="No">decryption_method</code></a></td>
+          <td>aes-128-cbc (si <a href="/encoding-settings/content-protection/encoding-settings-decryption.html#decryption_key"> <code translate="No">decryption_key</code></a> o <a href="/encoding-settings/content-protection/encoding-settings-decryption.html#decryption_key_url"> <code translate="No">decryption_key_url</code></a> se establecen)</td>
+          <td>Establezca el algoritmo de descifrado que se va a utilizar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-decryption.html#decryption_key"><code translate="No">decryption_key</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Establezca la clave de descifrado que se va a utilizar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-decryption.html#decryption_key_url"><code translate="No">decryption_key_url</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>La dirección URL de un archivo de clave de descifrado que se va a utilizar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-decryption.html#decryption_password"><code translate="No">decryption_password</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>La contraseña utilizada en combinación con la clave para descifrar el archivo de entrada.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="DRM">DRM</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#drm"><code translate="No">drm</code></a></td>
+          <td>{}</td>
+          <td>Hash de opciones de DRM</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#method"><code translate="No">method</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>El método de administración de derechos digitales (DRM) utilizado para proteger el contenido.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#provider"><code translate="No">provider</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>El proveedor de Administración de Derechos Digitales (DRM) utilizado.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#key_id"><code translate="No">key_id</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Identificador de la clave a usar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#key_guid"><code translate="No">key_guid</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Identificador de la clave a usar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#user_key"><code translate="No">user_key</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>La clave de usuario del proveedor DRM.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#server_key"><code translate="No">server_key</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>La clave del servidor del proveedor DRM.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#media_id"><code translate="No">media_id</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Identificador único para el medio.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#content_id"><code translate="No">content_id</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Identificador único para el contenido.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#content_key"><code translate="No">content_key</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Identificador único para el contenido.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#schemas"><code translate="No">schemas</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Información acerca de los proveedores de DRM al usar Cifrado común.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#type"><code translate="No">type</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Tipo de proveedor para este esquema DRM.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#license_acquisition_url"><code translate="No">license_acquisition_url</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>URL de adquisición de licencias para el <code translate="No">Playready CENC DRM</code> esquema.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class=" bcls-section">
+    <h2 id="H264">H.264</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html#h264_reference_frames"><code translate="No">h264_reference_frames</code></a></td>
+          <td>3</td>
+          <td>Varios fotogramas de referencia para usar en video H.264.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html#h264_profile">perfil h264_perfil</a></td>
+          <td>línea de base &gt;</td>
+          <td>El perfil H.264 que se va a utilizar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html#h264_level"><code translate="No">h264_level</code></a></td>
+          <td>Calculado automáticamente utilizando un <a href="http://en.wikipedia.org/wiki/H.264#Levels">gráfico de niveles H.264</a> basado en el vídeo de salida.</td>
+          <td>El nivel H.264 que se va a utilizar.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html#h264_bframes"><code translate="No">h264_bframes</code></a></td>
+          <td>0</td>
+          <td>El número máximo de fotogramas B consecutivos.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html#tuning"><code translate="No">tuning</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Ajuste el vídeo de salida para un tipo de contenido específico.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html#crf"><code translate="No">crf</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Configuración del control de velocidad de bits.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="HDR10">HDR10</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_red_x"><code translate="No">master_display.red.x</code></a></td>
+          <td>ninguno</td>
+          <td>Volumen de color x ajuste para rojo.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_red_y"><code translate="No">master_display.red.y</code></a></td>
+          <td>ninguno</td>
+          <td>Ajuste y del volumen de color para rojo.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_green_x"><code translate="No">master_display.green.x</code></a></td>
+          <td>Ninguno.</td>
+          <td>Volumen de color x ajuste para verde.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_green_y"><code translate="No">master_display.green.y</code></a></td>
+          <td>Ninguno.</td>
+          <td>Ajuste de volumen de color y para verde.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_blue_x"><code translate="No">master_display.blue.x</code></a></td>
+          <td>Ninguno.</td>
+          <td>Volumen de color x ajuste para azul.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_blue_y"><code translate="No">master_display.blue.y</code></a></td>
+          <td>Ninguno.</td>
+          <td>Ajuste de volumen de color y para azul.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_white_point_x"><code translate="No">master_display.white_point.x</code></a></td>
+          <td>Ninguno.</td>
+          <td>Ajuste del volumen de color x para el punto blanco.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_white_point_y"><code translate="No">master_display.white_point.y</code></a></td>
+          <td>Ninguno.</td>
+          <td>Ajuste y del volumen de color para el punto blanco.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_luminance_min"><code translate="No">master_display.luminance.min</code></a></td>
+          <td>Ninguno.</td>
+          <td>Luminancia mínima en liendas o candelas por metro cuadrado (cd/m2).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_luminance_max"><code translate="No">master_display.luminance.max</code></a></td>
+          <td>Ninguno.</td>
+          <td>Luminancia máxima en liendas o candelas por metro cuadrado (cd/m2).</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#max_content_light_level"><code translate="No">max_content_light_level</code></a></td>
+          <td>Ninguno.</td>
+          <td>Nivel máximo de luz para el contenido como un entero liend o candelas por metro cuadrado (cd/m2) - valores enteros.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#max_frame_average_light_level"><code translate="No">max_frame_average_light_level</code></a></td>
+          <td>Ninguno.</td>
+          <td>Nivel de luz medio máximo para liendas o candelas de marcos de contenido por metro cuadrado (cd/m2) - valores enteros. Aunque se permiten valores de hasta 10000, los valores del rango 100-200 generalmente producirán los mejores resultados.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="FLV">FLV</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-flv.html#cue_points"><code translate="No">cue_points</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Añada puntos de referencia de evento o navegación a un vídeo FLV.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-flv.html#type"><code translate="No">type</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Tipo de punto de referencia.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-flv.html#time"><code translate="No">time</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Un tiempo de punto de referencia, en segundos.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-flv.html#name"><code translate="No">name</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Un nombre de punto de referencia.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-flv.html#data"><code translate="No">data</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Datos de puntos de referencia.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="VP6">VP6</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_temporal_down_watermark"><code translate="No">vp6_temporal_down_watermark</code></a></td>
+          <td>20</td>
+          <td>Porcentaje de marca de agua temporal VP6.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_temporal_resampling"><code translate="No">vp6_temporal_resampling</code></a></td>
+          <td>True cuando se codifica con un número bajo de bits por píxel. De lo contrario, falso.</td>
+          <td>Habilite o deshabilite el remuestreo temporal VP6.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_undershoot_pct"><code translate="No">vp6_undershoot_pct</code></a></td>
+          <td>90</td>
+          <td>Apunte a un datarate ligeramente inferior.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_profile"><code translate="No">vp6_profile</code></a></td>
+          <td>vp6e</td>
+          <td>Perfil VP6: vp6s o vp6e.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_compression_mode"><code translate="No">vp6_compression_mode</code></a></td>
+          <td>bueno</td>
+          <td>Modo de compresión VP6: <code translate="No">good</code> o <code translate="No">best</code>.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_2pass_min_section"><code translate="No">vp6_2pass_min_section</code></a></td>
+          <td>40</td>
+          <td>Para la codificación VBR de dos pasos, el datarate más bajo que permitirá el codificador.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_2pass_max_section"><code translate="No">vp6_2pass_max_section</code></a></td>
+          <td>400</td>
+          <td>Para la codificación VBR de dos pasos, el datarate más alto que permitirá el codificador.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_stream_prebuffer"><code translate="No">vp6_stream_prebuffer</code></a></td>
+          <td>6</td>
+          <td>Segundos de precarga que son necesarios antes de iniciar la reproducción.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_stream_max_buffer"><code translate="No">vp6_stream_max_buffer</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Tamaño máximo del búfer del decodificador</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_deinterlace_mode"><code translate="No">vp6_deinterlace_mode</code></a></td>
+          <td>adaptable</td>
+          <td>Modo de desentrelazado para VP6</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_denoise_level"><code translate="No">vp6_denoise_level</code></a></td>
+          <td>0</td>
+          <td>Denoise nivel para VP6</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#alpha_transparency"><code translate="No">alpha_transparency</code></a></td>
+          <td>falso</td>
+          <td>Habilite la transparencia alfa. Actualmente, sólo es compatible con VP6.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#constant_bitrate"><code translate="No">constant_bitrate</code></a></td>
+          <td>falso</td>
+          <td>Utilice codificación de velocidad de bits constante (CBR).</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="MP4">MP4</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-mp4.html#hint"><code translate="No">hint</code></a></td>
+          <td>falso</td>
+          <td>Habilite la sugerencia de archivos MP4 para RTP/RTSP.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-mp4.html#mtu_size"><code translate="No">mtu_size</code></a></td>
+          <td>1 450</td>
+          <td>Establezca el tamaño de MTU para sugerencias MP4.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="AAC">AAC</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-aac.html#max_aac_profile"><code translate="No">max_aac_profile</code></a></td>
+          <td>he-aac</td>
+          <td>¿Cuál es el perfil AAC más avanzado (comprimido) que se puede permitir?</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-aac.html#force_aac_profile"><code translate="No">force_aac_profile</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Forzar el uso de un perfil de AAC en particular, en lugar de dejar que Zencoder elija el mejor perfil para la velocidad de bits.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Broadcast">Difusión</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#video_codec_preset"><code translate="No">video_codec_preset</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Ajuste preestablecido de codificación de vídeo para permitir la compatibilidad con estándares específicos de la industria.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#format_preset"><code translate="No">format_preset</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Formato preestablecido para permitir la compatibilidad con estándares específicos de la industria.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#ts_muxrate"><code translate="No">ts_muxrate</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>La velocidad máxima en kbps que la secuencia de transporte puede ser muxed. Se utiliza únicamente con el formato ts.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#ts_pmt_pid"><code translate="No">ts_pmt_pid</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Sustituya el identificador del paquete de la Tabla de mapa del programa.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#ts-video-pid"><code translate="No">ts_video_pid</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Sustituir el ID del paquete de datos de vídeo.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#ts_audio_pid"><code translate="No">ts_audio_pid</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Anule el ID del paquete de los datos de audio.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#ts_pcr_pid"><code translate="No">ts_pcr_pid</code></a></td>
+          <td>ninguno<span class="none"></span></td>
+          <td>Sustituya el identificador del paquete de la Referencia del reloj del programa.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#ts_cbr"><code translate="No">ts_cbr</code></a></td>
+          <td>falso</td>
+          <td>Crear salida CBR rellenando paquetes en la capa de flujo de transporte</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#lossless_video"><code translate="No">lossless_video</code></a></td>
+          <td>falso</td>
+          <td>Habilita la codificación de vídeo sin pérdidas si es compatible con el códec de vídeo.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Aspera">Aspera</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/sources-destinations/encoding-settings-aspera.html#aspera_transfer_policy"><code translate="No">aspera_transfer_policy</code></a></td>
+          <td>justo</td>
+          <td>Cómo asignar ancho de banda disponible para transferencias de archivos Aspera.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/sources-destinations/encoding-settings-aspera.html#transfer_minimum_rate"><code translate="No">transfer_minimum_rate</code></a></td>
+          <td>1000</td>
+          <td>Una velocidad objetivo en Kbps para los mínimos de transferencia de datos.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/sources-destinations/encoding-settings-aspera.html#transfer_maximum_rate"><code translate="No">transfer_maximum_rate</code></a></td>
+          <td>250000</td>
+          <td>Una velocidad objetivo en Kbps para máximos de transferencia de datos.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Transmuxing">Transmultiplexación</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Ajuste</th>
+          <th>Predeterminado</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-transmuxing.html#copy_video"><code translate="No">copy_video</code></a></td>
+          <td>falso</td>
+          <td>Copiar la pista de vídeo del archivo de entrada</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-transmuxing.html#copy_audio"><code translate="No">copy_audio</code></a></td>
+          <td>falso</td>
+          <td>Copiar la pista de audio del archivo de entrada</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</article>
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">Contenido de la página</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="last-updated">
+  Última actualización de la página el 28-09-2020
+</div>
+
+
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Asistencia técnica de Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            Estado del sistema<a href="https://status.brightcove.com"></a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">Contactar soporte</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">Documentación</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>Formación</h2>
+
+        <ul class="menu">
+          <li>
+            Cursos en línea<a href="https://studio.support.brightcove.com/training/online-training-courses.html"></a>
+          </li>
+          <li>
+            Inscríbete a un curso<a href="https://studio.support.brightcove.com/training/register-training.html"></a>
+          </li>
+          <li>
+            <a href="https://university.brightcove.com/">Universidad de Brightcove</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">BrightCove.com</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">Contáctanos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td>Privacidad | Términos y Condiciones<a href="https://www.brightcove.com/en/legal/privacy"></a><a href="https://www.brightcove.com/en/terms-and-conditions"></a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="talla_wrapper">
+  <p style="text-align: right;position: relative;"><button style="background:rgb(2, 28, 146);color:Snow;padding:.3rem;position:fixed;right:0;bottom:1em;z-index:9999999" onclick="javascript:displayChat()">¿Tiene alguna pregunta? </button> </p>
+  <div id="talla_chat">
+</div>
+</div>
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <script src="https://assets.talla.com/latest/embeddedjs/talla.js"></script>
+  <script src="/assets/js/talla-init.js"></script>
+  <!-- <script src="https://sdk.amazonaws.com/js/aws-sdk-2.677.0.min.js"></script> -->
+</body>
+
+</html>
