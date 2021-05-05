@@ -1,0 +1,855 @@
+﻿<!doctype html>
+<html lang="es-es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="En este tema se enumeran los problemas conocidos actuales de Zencoder.">
+
+  <title>Problemas conocidos</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="/assets/css/local.css">
+  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
+  <script src="/assets/js/sajari-head.js"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/Zencoder_Logo.svg" alt="logotipo del producto" style="max-height: 100px;max-width: 232px;"/></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">Seleccionar idioma</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script>
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+    
+
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="soporte"/> Contactar con Soporte</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/">Estado<img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="estado del sistema"/> del sistema</a></span> <br/>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+      
+      
+      
+      <li class="breadcrumb-item">Referencias<a href="/references/"></a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Problemas conocidos</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+            <div class="col-sm-3 left-side-bar">
+        <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
+          <option value="">Otros documentos de Brightcove</option>
+          
+            
+              <option value="https://support.brightcove.com">Documentación Inicio</option>
+            
+          
+            
+              <option value="https://audience.support.brightcove.com">Audiencia de Brightcove</option>
+            
+          
+            
+              <option value="https://beacon.support.brightcove.com">Baliza Brightcove</option>
+            
+          
+            
+              <option value="https://campaign.support.brightcove.com">Campaña de Brightcove</option>
+            
+          
+            
+              <option value="https://engage.support.brightcove.com">Brightcove Engage</option>
+            
+          
+            
+              <option value="https://live.support.brightcove.com">Brightcove Live</option>
+            
+          
+            
+              <option value="https://gallery.support.brightcove.com">Brightcove Gallery</option>
+            
+          
+            
+              <option value="https://ssai.support.brightcove.com">Brightcove SSAI</option>
+            
+          
+            
+              <option value="https://social.support.brightcove.com">Brightcove Social</option>
+            
+          
+            
+              <option value="https://studio.support.brightcove.com">Video Cloud Studio</option>
+            
+          
+            
+              <option value="https://player.support.brightcove.com">Desarrollo de jugadores de Brightcove</option>
+            
+          
+            
+              <option value="https://apis.support.brightcove.com">API para la plataforma de Video Cloud</option>
+            
+          
+            
+              <option value="https://sdks.support.brightcove.com">SDK de dispositivos de Video Cloud</option>
+            
+          
+            
+              <option value="https://integrations.support.brightcove.com">Integraciones y conectores CMS</option>
+            
+          
+            
+              <option value="https://general.support.brightcove.com">Información general de Video Cloud</option>
+            
+          
+            
+              <option value="https://zencoder.support.brightcove.com">Zencoder</option>
+            
+          
+        </select>
+
+        <nav class="sidenav" id="side_nav">
+          
+            
+            <h5><a href="/index.html">Inicio</a></h5>
+            
+          
+            
+              <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
+					<option value="">기타 브라이트코브 문서</option>
+					
+						
+							<option value="https://support.brightcove.com">설명서 홈</option>
+						
+					
+						
+							<option value="https://audience.support.brightcove.com">브라이트코브 대상</option>
+						
+					
+						
+							<option value="https://beacon.support.brightcove.com">브라이트코브 비콘</option>
+						
+					
+						
+							<option value="https://campaign.support.brightcove.com">브라이트코브 캠페인</option>
+						
+					
+						
+							<option value="https://engage.support.brightcove.com">브라이트코브 참여</option>
+						
+					
+						
+							<option value="https://live.support.brightcove.com">Brightcove Live</option>
+						
+					
+						
+							<option value="https://gallery.support.brightcove.com">Brightcove Gallery</option>
+						
+					
+						
+							<option value="https://ssai.support.brightcove.com">Brightcove SSAI</option>
+						
+					
+						
+							<option value="https://social.support.brightcove.com">브라이트코브 소셜</option>
+						
+					
+						
+							<option value="https://studio.support.brightcove.com">비디오 클라우드 스튜디오</option>
+						
+					
+						
+							<option value="https://player.support.brightcove.com">브라이트코브 플레이어 개발</option>
+						
+					
+						
+							<option value="https://apis.support.brightcove.com">비디오 클라우드 플랫폼 API</option>
+						
+					
+						
+							<option value="https://sdks.support.brightcove.com">비디오 클라우드 디바이스 SDK</option>
+						
+					
+						
+							<option value="https://integrations.support.brightcove.com">통합 및 CMS 커넥터</option>
+						
+					
+						
+							<option value="https://general.support.brightcove.com">비디오 클라우드 일반 정보</option>
+						
+					
+						
+							<option value="https://zencoder.support.brightcove.com">Zencoder</option>
+						
+			<h5 class="submenu-header"><a href="/getting-started/index.html"><strong>+</strong> Empezar</a></h5>		
+				</select>
+        <nav class="sidenav" id="side_nav">
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li>Resumen<a href="/getting-started/overview-zencoder.html"></a></li>
+                  
+                
+                  
+                    <li>Inicio rápido<a href="/getting-started/quick-start-zencoder.html"></a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/getting-api-key.html">Obtención de una clave API</a></li>
+                  
+                
+                  
+                    <li>Configuración de salida<a href="/getting-started/output-settings.html"></a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/creating-multiple-outputs.html">Creación de varias salidas</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/general-information/index.html">Información general <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/general-information/faq-basics.html">Conceptos básicos</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/faq-codecs-and-formats.html">Códecs y formatos</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/faq-encoding.html">Codificación</a></li>
+                  
+                
+                  
+                    <li>Transferencias de archivos<a href="/general-information/faq-file-transfers.html"></a></li>
+                  
+                
+                  
+                    <li>Precios de Zencoder<a href="/general-information/faq-zencoder-pricing.html"></a></li>
+                  
+                
+                  
+                    <li>Limitación de Tasa<a href="/general-information/faq-rate-limiting.html"></a></li>
+                  
+                
+                  
+                    <li>Formatos de vídeo y audio compatibles<a href="/general-information/supported-video-and-audio-formats-codecs-and-containers.html"></a></li>
+                  
+                
+                  
+                    <li>Visión general:<a href="/general-information/overview-context-aware-encoding.html"> Codificación consciente del contexto</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/getting-notifications-when-videos-are-finished.html">Obtención de notificaciones cuando terminan los vídeos</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/how-zencoder-saves-your-files-when-uploads-fail.html">Cómo guarda Zencoder los archivos cuando las cargas fallan</a></li>
+                  
+                
+                  
+                    <li>Uso de Zencoder con S3<a href="/general-information/using-zencoder-s3.html"></a></li>
+                  
+                
+                  
+                    <li>Uso de Zencoder con Azure<a href="/general-information/using-zencoder-azure.html"></a></li>
+                  
+                
+                  
+                    <li>Uso de Zencoder con Google Cloud Storage<a href="/general-information/using-zencoder-google-cloud-platform.html"></a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header">Referencias +<a href="/references/index.html"><strong></strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/references/reference.html">Referencia de API</a></li>
+                  
+                
+                  
+                    <li>Problemas conocidos<a href="/references/known-issues.html"></a></li>
+                  
+                
+                  
+                    <li>Actualizaciones de productos<a href="/references/release-notes.html"></a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/encoding-settings/index.html">Configuración de codificación <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/encoding-settings/general/index.html">Configuración general <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/encoding-settings/general/encoding-settings-job.html">Configuración del trabajo</a></li>
+                        
+                        <li><a href="/encoding-settings/general/encoding-settings-general-output-settings.html">Configuración general de salida</a></li>
+                        
+                        <li><a href="/encoding-settings/general/cae-settings.html">Configuración de CAE</a></li>
+                        
+                        <li><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html">Configuración de salidas condicionales</a></li>
+                        
+                        <li>Configuración de notificaciones<a href="/encoding-settings/general/encoding-settings-notifications.html"></a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/encoding-settings/general-audio-video/index.html">Configuración de audio/vídeo <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html">Configuración de audio</a></li>
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html">Configuración de procesamiento de audio</a></li>
+                        
+                        <li>Configuración de vídeo<a href="/encoding-settings/general-audio-video/encoding-settings-video.html"></a></li>
+                        
+                        <li>Configuración de procesamiento de vídeo<a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html"></a></li>
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html">Configuración de difusión</a></li>
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html">Configuración de velocidad de cuadro</a></li>
+                        
+                        <li>Configuración de control de velocidad<a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html"></a></li>
+                        
+                        <li>Configuración de resolución<a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html"></a></li>
+                        
+                        <li>Configuración de transmisión segmentada<a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html"></a></li>
+                        
+                        <li>Configuración de transmuxing<a href="/encoding-settings/general-audio-video/encoding-settings-transmuxing.html"></a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/encoding-settings/formats-codecs/index.html">Formatos y configuración de códec <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html">Configuración de formato y códecs</a></li>
+                        
+                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-aac.html">Configuración de AAC</a></li>
+                        
+                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-flv.html">Configuración de FLV</a></li>
+                        
+                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html">Configuración HDR</a></li>
+                        
+                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html">Configuración de H.264</a></li>
+                        
+                        <li>Configuración de MP4<a href="/encoding-settings/formats-codecs/encoding-settings-mp4.html"></a></li>
+                        
+                        <li>Configuración de VP6<a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html"></a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      Configuración de activos multimedia +<a href="/encoding-settings/assets/index.html"><strong></strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/encoding-settings/assets/encoding-settings-captions.html">Configuración de subtítulos</a></li>
+                        
+                        <li><a href="/encoding-settings/assets/encoding-settings-clips.html">Configuración de clips</a></li>
+                        
+                        <li>Configuración de miniaturas<a href="/encoding-settings/assets/encoding-settings-thumbnails.html"></a></li>
+                        
+                        <li>Configuración de marcas de agua<a href="/encoding-settings/assets/encoding-settings-watermarks.html"></a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/encoding-settings/content-protection/index.html">Configuración de protección de contenido <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/encoding-settings/content-protection/encoding-settings-encryption.html">Configuración de cifrado</a></li>
+                        
+                        <li><a href="/encoding-settings/content-protection/encoding-settings-decryption.html">Configuración de descifrado</a></li>
+                        
+                        <li><a href="/encoding-settings/content-protection/encoding-settings-drm.html">Configuración de DRM</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      Configuración de origenes/destino +<a href="/encoding-settings/sources-destinations/index.html"><strong></strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li>Configuración de S3<a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html"></a></li>
+                        
+                        <li><a href="/encoding-settings/sources-destinations/encoding-settings-aspera.html">Configuración de Aspera</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/encoding-guides/index.html">Guías de codificación <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/encoding-guides/advanced-audio-mapping-guide.html">Guía de asignación de audio</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/as11-mxf.html">Guía de AS-11-MXF</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/avc-intra-guide.html">Guía AVC-Intra</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/cae-guide.html">Guía CAE</a></li>
+                  
+                
+                  
+                    <li>Guía de transmuxing<a href="/encoding-guides/creating-mp4-and-hls-outputs-together.html"></a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/dash-streaming-and-playlists.html">DASH Streaming y listas de reproducción</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/h264-advanced-guide.html">Guía avanzada de H.264</a></li>
+                  
+                
+                  
+                    <li>Formatos de vídeo HDR admitidos<a href="/encoding-guides/hdr10-video-output.html"></a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/hevch265-guide.html">Guía de HEVC/H.265</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/highwinds-smil.html">Guía de Highwinds SMIL</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/html5-encoding.html">Codificación HTML5</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/http-live-segmented-streaming-and-playlists.html">Streaming HLS y listas de reproducción</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/http-live-streaming-using-fragmented-mp4.html">HLS usando MP4 fragmentado</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/iosmobile-encoding.html">Guía de codificación iOS/Mobile</a></li>
+                  
+                
+                  
+                    <li>Transmisión fluida de Microsoft<a href="/encoding-guides/microsoft-smooth-streaming.html"></a></li>
+                  
+                
+                  
+                    <li>Modos de codificación basados en calidad para streaming<a href="/encoding-guides/using-quality-based-encoding-modes-streaming-video.html"></a></li>
+                  
+                
+                  
+                    <li>Guía avanzada de VP6<a href="/encoding-guides/vp6-advanced-guide.html"></a></li>
+                  
+                
+                  
+                    <li>Guía de VP9<a href="/encoding-guides/vp9-guide.html"></a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/error-troubleshooting/index.html">Errores/Solución de problemas <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/error-troubleshooting/problems.html">Problemas comunes</a></li>
+                  
+                
+                  
+                    <li>Aperturas de la región<a href="/error-troubleshooting/region-outages.html"></a></li>
+                  
+                
+                  
+                    <li>Cuándo volver a intentar trabajos fallidos<a href="/error-troubleshooting/when-should-i-retry-failed-jobs.html"></a></li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/error-troubleshooting/error-codes/index.html">Códigos de error <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-akamainetstoragefilesizeerror.html">AkamainetStorageFileError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-checksummismatcherror.html">CheckSummisMatchError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-dimensiontoosmallerror.html">DimensionToosMallError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-downloadaccessdeniederror.html">DescargarAccessDeniedError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-downloadfailureerror.html">DescargarFailureError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-downloadtimeouterror.html">DescargarTimeouTerror</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-filenotfounderror.html">FileNotFounderError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-inaccuratedurationerror.html">FicheroPermanentlyMovedError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-inaccuratedurationerror.html">Error impreciadurationError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-incompatiblewithdynamicprofileserror.html">IncompatibleWithDynamicProfilesError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-inputfilenotfound.html">InputFileNotFound</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidaccesskeyiderror.html">InvalidAccessKeyIdError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidaudiosettingserror.html">InvalidAudioSettingsError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidcodeccombinationerror.html">InvalidCodecCombinationError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invaliddownloadedfiletypeerror.html">InvalidDescargarFileTypeError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidencryptionsettingserror.html">InvalidEncryptionSettingsError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidfilepatherror.html">InvalidFilePatherError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidformatcodecerror.html">InvalidFormatCodeCError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidframerateerror.html">InvalidFrameRateError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidusernameorpassworderror.html">InvalidUserNameOrPasswordError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidvideobitrateerror.html">InvalidVideoObitrateError</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidvideosettingserror.html">InvalidVideoSettingsError</a></li>
+                        
+                        <li>NomediaError<a href="/error-troubleshooting/error-codes/error-nomediaerror.html"></a></li>
+                        
+                        <li>QuickTimeReferenceError<a href="/error-troubleshooting/error-codes/error-quicktimereferenceerror.html"></a></li>
+                        
+                        <li>RemoteServerProblemError<a href="/error-troubleshooting/error-codes/error-remoteserverproblemerror.html"></a></li>
+                        
+                        <li>RTMPAuthFaileError<a href="/error-troubleshooting/error-codes/error-rtmpauthfailederror.html"></a></li>
+                        
+                        <li>RTMPMaxStreamsXidAlcanzado<a href="/error-troubleshooting/error-codes/error-rtmpmaxstreamsxidreached.html"></a></li>
+                        
+                        <li>RTMPStreamNameAlreadyInuse<a href="/error-troubleshooting/error-codes/error-rtmpstreamnamealreadyinuse.html"></a></li>
+                        
+                        <li>S3BucketNotFounderError<a href="/error-troubleshooting/error-codes/error-s3bucketnotfounderror.html"></a></li>
+                        
+                        <li>SegmentaciónError<a href="/error-troubleshooting/error-codes/error-segmentingerror.html"></a></li>
+                        
+                        <li>SkippedSourceError<a href="/error-troubleshooting/error-codes/error-skippedsourceerror.html"></a></li>
+                        
+                        <li>ThumbnailError<a href="/error-troubleshooting/error-codes/error-thumbnailerror.html"></a></li>
+                        
+                        <li>Error de transcodificación<a href="/error-troubleshooting/error-codes/error-transcodingerror.html"></a></li>
+                        
+                        <li>Transferencia። InvalidGranteEGroupURLError<a href="/error-troubleshooting/error-codes/error-transferinvalidgranteegroupurlerror.html"></a></li>
+                        
+                        <li>Transferencia። InvalidGranteeIdError<a href="/error-troubleshooting/error-codes/error-transferinvalidgranteeiderror.html"></a></li>
+                        
+                        <li>TrunCatedFileError<a href="/error-troubleshooting/error-codes/error-truncatedfileerror.html"></a></li>
+                        
+                        <li>UnableToCreateDynamicProfilesError<a href="/error-troubleshooting/error-codes/error-unabletocreatedynamicprofileserror.html"></a></li>
+                        
+                        <li>InesperadDownloadProblemError<a href="/error-troubleshooting/error-codes/error-unexpecteddownloadproblemerror.html"></a></li>
+                        
+                        <li>UnexpectedFFMPegResult<a href="/error-troubleshooting/error-codes/error-unexpectedffmpegresult.html"></a></li>
+                        
+                        <li>UnexpectedMPlayerResult<a href="/error-troubleshooting/error-codes/error-unexpectedmplayerresult.html"></a></li>
+                        
+                        <li>Resultado inesperadoProgenResult<a href="/error-troubleshooting/error-codes/error-unexpectedprogenresult.html"></a></li>
+                        
+                        <li>ResultError inesperadoResultado<a href="/error-troubleshooting/error-codes/error-unexpectedresulterror.html"></a></li>
+                        
+                        <li>Error inesperadoDuploadProblemError<a href="/error-troubleshooting/error-codes/error-unexpecteduploadproblemerror.html"></a></li>
+                        
+                        <li>Resultado inesperadoX264resultado<a href="/error-troubleshooting/error-codes/error-unexpectedx264result.html"></a></li>
+                        
+                        <li>IlegibleFileError<a href="/error-troubleshooting/error-codes/error-unreadablefileerror.html"></a></li>
+                        
+                        <li>UnSupportedCodeCError<a href="/error-troubleshooting/error-codes/error-unsupportedcodecerror.html"></a></li>
+                        
+                        <li>UnSupportedEncodingError<a href="/error-troubleshooting/error-codes/error-unsupportedencodingerror.html"></a></li>
+                        
+                        <li>UnSupportedEncryptionError<a href="/error-troubleshooting/error-codes/error-unsupportedencryptionerror.html"></a></li>
+                        
+                        <li>UnSupportedTranscodeCombinationError<a href="/error-troubleshooting/error-codes/error-unsupportedtranscodecombinationerror.html"></a></li>
+                        
+                        <li>UploadAccessDeniedError<a href="/error-troubleshooting/error-codes/error-uploadaccessdeniederror.html"></a></li>
+                        
+                        <li>UploadFailureError<a href="/error-troubleshooting/error-codes/error-uploadfailureerror.html"></a></li>
+                        
+                        <li>UploadServerNotFounderError<a href="/error-troubleshooting/error-codes/error-uploadservernotfounderror.html"></a></li>
+                        
+                        <li>UploadTimeouTerror<a href="/error-troubleshooting/error-codes/error-uploadtimeouterror.html"></a></li>
+                        
+                        <li>WorkerTimeOutError<a href="/error-troubleshooting/error-codes/error-workertimeouterror.html"></a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/integration/index.html">Integración <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/integration/faq-integration-libraries.html">Bibliotecas de integración</a></li>
+                  
+                
+                  
+                    <li><a href="/integration/100-integration-reliability.html">100% de fiabilidad de integración</a></li>
+                  
+                
+                  
+                    <li>Trabajos de prueba y modo de integración<a href="/integration/test-jobs-and-integration-mode.html"></a></li>
+                  
+                
+                  
+                    <li>Uso de claves API de sólo lectura<a href="/integration/using-read-only-api-keys.html"></a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header">Soporte +<a href="/support/index.html"><strong></strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    
+                  
+                
+                  
+                    <li>Visualización de la página Estado del Sistema de Brightcove<a href="/support/viewing-brightcove-system-status-page.html"></a></li>
+                  
+                
+                  
+                    <li><a href="/support/contact-sales.html">Contacto con Ventas</a></li>
+                  
+                
+                  
+                    <li>Apertura de un caso de soporte<a href="/support/opening-case-with-brightcove-support.html"></a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+  <!-- bootstrap layout -->
+
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="Menú de navegación"/></p>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">Contenido de la página</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="abrir en una nueva pestaña" style="margin-top:4em;width: 1.5em;"/></a>
+
+
+
+  
+    
+
+
+<h1>Problemas conocidos</h1>
+<article class="bcls-article">
+  <summary>En este tema se enumeran los problemas conocidos actuales de Zencoder.</summary>
+  <section class="bcls-section">
+    <h2 id=""></h2>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">Contenido de la página</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<footer class="bcls-footer" role="contentinfo">  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Asistencia técnica de Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            Estado del sistema<a href="https://status.brightcove.com"></a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">Contactar soporte</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">Documentación</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>Capacitación</h2>
+
+        <ul class="menu">
+          <li>
+            Cursos en línea<a href="https://studio.support.brightcove.com/training/online-training-courses.html"></a>
+          </li>
+          <li>
+            Inscríbete a un curso<a href="https://studio.support.brightcove.com/training/register-training.html"></a>
+          </li>
+          <li>
+            <a href="https://university.brightcove.com/">Universidad de Brightcove</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">BrightCove.com</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">Contáctanos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td>Privacidad | Términos y Condiciones<a href="https://www.brightcove.com/en/legal/privacy"></a><a href="https://www.brightcove.com/en/terms-and-conditions"></a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <!-- <script src="https://sdk.amazonaws.com/js/aws-sdk-2.677.0.min.js"></script> -->
+</body>
+
+</html>
