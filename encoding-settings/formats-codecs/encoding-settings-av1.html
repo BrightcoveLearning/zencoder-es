@@ -1,0 +1,105 @@
+---
+title: Descripción de la configuración AV1: Este tema contiene detalles sobre la configuración de codificación relacionada con las salidas de vídeo AV1.
+parent: Formats and Codec Settings 
+grandparent: Encoding Settings
+layout: staging
+---
+ <h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+
+  <section class="bcls-section">
+    <h2 id="Encoding_recommendations">Recomendaciones de codificación</h2>
+    <p>AV1 es un formato de codificación de video de próxima generación abierto, libre de regalías de Alliance of Open Media Video. Puede ofrecer una calidad superior a velocidades de bits significativamente más bajas en comparación con los códecs HEVC, VP9 y H.264.</p>
+
+    <p>Ver el <a href="/encoding-guides/av1-guide.html">Guía AV1</a> para obtener más información, y preste especial atención a la <a href="https://zencoder.support.brightcove.com/encoding-guides/av1-guide.html#limitation">Limitaciones</a> para soporte actual.</p>
+    <p>Además de las configuraciones que se encuentran en esta página, es posible que desee incluir otras configuraciones generales de video, pero tenga en cuenta que las siguientes configuraciones son <strong>no</strong> actualmente soportado:</p>
+
+    <ul>
+      <li><code translate="No"><a href="/encoding-settings/general-audio-video/encoding-settings-video.html#video_reference_frames">video_reference_frames</a></code></li>
+      <li><code translate="No"><a href="/encoding-settings/general-audio-video/encoding-settings-video.html#video_bframes">video_bframes</a></code></li>
+      <li><code translate="No"><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#max_video_bitrate">max_video_bitrate</a></code></li>
+      <li><code translate="No"><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#quality">quality</a></code></li>
+      <li><code translate="No"><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html#crf">crf</a></code></li>
+      <li><code translate="No"><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#decoder_bitrate_cap">decoder_bitrate_cap</a></code></li>
+    </ul>
+    <p>Tenga en cuenta también que para <a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html">la configuración de Resolución</a> (ya sea que utilice <code translate="No">size</code> o <code translate="No">width</code> y <code translate="No">height</code>) tanto la anchura como la altura <strong>deben</strong> ser múltiplos de 8.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 translate="No" id="video_codec_level">video_codec_level</h2>
+    <code translate="No">video_codec_level:String</code>
+
+    <p><strong>Versiones de API:</strong> V2</p>
+
+    <p><strong>Padre:</strong> <a translate="No" href="/encoding-settings/general/encoding-settings-job.html#outputs">salidas</a></p>
+
+    <p><strong>Valores válidos:</strong>
+      <ul>
+        <li>2.0</li>
+        <li>2.1</li>
+        <li>3.0</li>
+        <li>3.1</li>
+        <li>4.0</li>
+        <li>4.1</li>
+        <li>5.0</li>
+        <li>5.1</li>
+        <li>5.2</li>
+        <li>5.3</li>
+        <li>6.0</li>
+        <li>6.1</li>
+        <li>6.2</li>
+        <li>6.3</li>
+      </ul>
+  </p>   
+    
+    <p><strong>Tipos de trabajo compatibles:</strong> Todas</p>
+
+    <p><strong>Ejemplo:</strong> 4.1</p>
+
+    <p><strong>Descripción:</strong></p>
+
+    <p>Restringe la tasa de bits y las unidades de árbol de codificación (CTU) (AV1).</p>
+    <p>Tenga en cuenta que esta configuración se puede utilizar para otros códecs con diferentes valores permitidos. Ver <a href="/encoding-settings/general-audio-video/encoding-settings-video.html">Configuración de codificación de video</a>.</p>
+
+    <pre class="line-numbers">
+<code class="language-json" translate="No">{
+  "input": "s3://zencodertesting/test.mov",
+  "outputs": [
+    {
+      "video_codec_level": "5.1"
+    }
+  ]
+}</code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 translate="No" id="video_codec_profile">video_codec_profile</h2>
+    <code translate="No">video_codec_profile:String</code>
+
+    <p><strong>Versiones de API:</strong> V2</p>
+
+    <p><strong>Padre:</strong> <a translate="No" href="/encoding-settings/general/encoding-settings-job.html#outputs">salidas</a></p>
+
+    <p><strong>Valores válidos:</strong> <code translate="No">main</code>, <code translate="No">high</code>, <code translate="No">professional</code></p>   
+    
+    <p><strong>Defecto:</strong> <code translate="No">main</code></p>
+
+    <p><strong>Tipos de trabajo compatibles:</strong> Todas</p>
+
+    <p><strong>Ejemplo:</strong> 4.1</p>
+
+    <p><strong>Descripción:</strong></p>
+
+    <p>Establece el perfil de codificación.</p>
+    <p>Tenga en cuenta que esta configuración se puede utilizar para otros códecs con diferentes valores permitidos. Ver <a href="/encoding-settings/general-audio-video/encoding-settings-video.html">Configuración de codificación de video</a>.</p>
+
+    <pre class="line-numbers">
+<code class="language-json" translate="No">{
+  "input": "s3://zencodertesting/test.mov",
+  "outputs": [
+    {
+      "video_codec_profile": "high"
+    }
+  ]
+}</code></pre>
+  </section>
+</article>
